@@ -664,8 +664,7 @@ elif st.session_state.current_step == 2:
             with col_y_choice:
                 scatter_y = st.selectbox("Pilih Variabel Target (Y):", cols_to_stats, index=cols_to_stats.index(default_target))
             fig_scatter = px.scatter(
-                df, x=scatter_x, y=scatter_y, color=scatter_y, color_continuous_scale="Viridis",
-                trendline="ols", opacity=0.8)
+                df, x=scatter_x, y=scatter_y, color=scatter_y, color_continuous_scale="Viridis", opacity=0.8)
             fig_scatter.update_traces(
                 marker=dict(
                     size=11, line=dict(
