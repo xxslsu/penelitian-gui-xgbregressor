@@ -878,7 +878,7 @@ elif st.session_state.current_step == 3:
                             param_grid=param_grid,
                             scoring='r2',
                             cv=5,
-                            n_jobs=-1
+                            n_jobs=1
                         )
                         
                         with st.spinner("Menjalankan GridSearchCV untuk mencari hyperparameter terbaik"):
